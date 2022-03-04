@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Tudo Sobre Google Glass</title>
+<link rel="stylesheet" href="_css/estilo.css"/>
+<link rel="stylesheet" href="_css/form.css"/>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<script>
+    function cal_total() {
+        var qtd = parseInt(document.getElementById ('cQtd').value)
+        tot = qtd *1500;
+        document.getElementById('cTot').value = tot;
+    }
+</script>
+
+</head>
+
+<body>
+<div id="interface">
+    <hgroup>
+    <h1>Google Glass</h1>
+    <h2>A revolução do Google está chegando</h2>
+    </hgroup>
+
+<img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+    <header id="cabecalho">
+        <nav id="menu">
+        <h1>Menu Principal</h1>
+            <ul type="disc">
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudafoto('_imagens/contato.png')"><a href="index.html">Inicio</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')"  onmouseout="mudafoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')"  onmouseout="mudafoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')"  onmouseout="mudafoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')"  onmouseout="mudafoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+<form method="post" id="fContato" action="mailto:alyssonsilvabb@gmail.com" oninput="cal_total();">
+<fieldset id="usuario"> <legend> Identificação do Usuário </legend>
+    <p> <label for="cNome"> Nome: </label> </label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo" /></p>
+    <p> <label for="cSenha"> Senha: </label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos"/></p>
+    <p> <label for="cMail"> E-mail: </label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>
+</fieldset>
+
+<fieldset id="sexo">
+       <legend> Sexo: </legend> 
+        <input type="radio" name="tSexo" id="cMas"/> <label for="cMas"> Masculino </label> <br/>
+        <input type="radio" name="tSexo" id="cFem"/> <label for="cFem"> Feminino </label>
+</fieldset>
+
+ <p> <label for="CNasc"> Data de Nascimento: </label> <input type="date" name="tNasc" id="CNasc" /> </p>
+
+
+<fieldset id="endereco"> <legend> Endereço do Usuário </legend>
+   <p> <label for="cRua"> Logradouro: </label> <input type="text" name="tRua" id="cRua" size="13" maxlength="70" placeholder="Rua, Av, Trav..."/> </p>
+    <p> <label for="cNum"> Número: </label> <input type="number" name="tNum" id="cNum" min="0" max="99999"/> </p>
+    <p> <label for="cEst"> Estado: </label> <select id="tEst" id="cEst"> 
+        <option value="SP">Sao paulo </option>
+        <option value="PE" selected>Pernambuco</option>
+        <option value="RJ">Rio de Janeiro</option>
+    </select> </p>
+    <p><label for="cCid"> Cidade: <input type="text" name="tCid" id="cCid" size="25" maxlength="30" placeholder="Sua Cidade" list="cidades" > </label> </p>
+    <datalist id="cidades">
+     <option value="Vitoria STS"></option>
+     <option value="Recife"></option>
+    </datalist>
+</fieldset>
+
+<fieldset id="mensagem"> <legend> Mensagem do Usuário </legend>
+   <p> 
+       <label for="cUrg"> Grau de Urgência: </label> Min <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Max </p>
+   <p> <label for="cMsg"> Mensagem: </label> <textarea name="tMsg" id="CMsg" cols="45" rows="5" placeholder="Nos fale algo"></textarea> </p>
+</fieldset>
+<fieldset id="pedido"> <legend> Quero um Google Glass </legend>
+   <p> <input type="checkbox" name="tPed" id="cPed" checked/>
+        <label for="cPed"> Gostaria de adquirir um Google Glass quando disponível </label> </p>
+   <p> <label for="cCor"> Cor: </label> <input type="color" name="tCor" id="cCor" value="#0000FF" /> </p>
+   <p> <label for="cQnt"> Quantidade: </label> <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/> </p>  
+   <p> <label for="cTot"> Preço Total: R$ </label> <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly/> </p>
+</fieldset>
+
+<input type="image" name="tEnviar" src="_imagens/botao-enviar.png"/>
+</form>
+
+<footer id="rodape">
+
+    <p>Copyright&copy; 2021 - by Alysson Silva <br/>
+    <a href="https://www.facebook.com/alyssonsilva.silva.75/" target="_blank"> Facebook </a> | I
+     <a href="https://www.instagram.com/alysson.silva.75/" target="_blank">   Instagram </a> </p>
+        </footer>
+    </div>
+    </body>
+    </html>

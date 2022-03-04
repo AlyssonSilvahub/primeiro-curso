@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Java</title>
+    <script>
+        function acendeLampada (){
+            document.getElementById("Luz").src="lampada-acesa.jpg";
+            }
+            function apagaLampada (){
+                document.getElementById("Luz").src="lampada-apagada.jpg";
+        }
+        function quebraLmapada() {
+            document.getElementById("Luz").src="lampada-quebrada.jpg";
+        }
+        </script>
+</head>
+<body>
+<h1>Acender Lâmpada</h1>
+<img src="lampada-apagada.jpg" id="Luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLmapada()"/>
+
+</body>
+</html>
