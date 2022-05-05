@@ -12,9 +12,9 @@ body{
 }
 div#interface {
     font-family: 'bubblegum-sans-regular', sans-serif;
-    width: 1100px;
+    width: 1190px;
     background-color: #ffffff;
-    margin: -20px auto 9px auto;
+    margin: -15px auto 70px auto;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     padding: 15px;
 }
@@ -156,8 +156,8 @@ header#cabeçalho-artigo h1{
 font-family: 'Fonte logo', sans-serif;
     font-size: 20pt;
     color: #606060;
-    margin-bottom:  0px;
-    margin-top: 0px;
+    margin-bottom:  1px;
+    margin-top: 1px;
 }
 .direita{
     text-align: right;
@@ -208,23 +208,23 @@ table#tabelaspec caption span {
     float: right;
     color: #000000;
     font-size: 8pt;
-    margin-top: 18px;
+    margin-top: 1px;
 
 }
 
 aside#lateral{
     display: block;
-    width: 350px;
+    width: 355px;
     float: right;
     background-color: #dddddd;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 55px;
+    margin-top: 30px;
     box-shadow: 5px 3px 6px rgba(0,0,0,.5);
 }
 
 aside#lateral h1 {
 font-family: "Fonte logo",sans-serif;
-    font-size: 20pt;
+    font-size: 25pt;
     color: #606060;
     margin-top: 1px;
 
