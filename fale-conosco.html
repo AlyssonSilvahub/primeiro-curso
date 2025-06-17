@@ -50,6 +50,8 @@
        <legend> Sexo: </legend> 
         <input type="radio" name="tSexo" id="cMas"/> <label for="cMas"> Masculino </label> <br/>
         <input type="radio" name="tSexo" id="cFem"/> <label for="cFem"> Feminino </label>
+        <br>
+         <input type="radio" name="tSexo" id="cOutros"/><label for="cOutros"> Outros </label>
 
 
  <p> <label for="CNasc"> <br> Data de Nascimento: </label> <input type="date" name="tNasc" id="CNasc" /> </p>
@@ -61,9 +63,34 @@
    <p> <label for="cRua"> Logradouro: </label> <input type="text" name="tRua" id="cRua" size="13" maxlength="70" placeholder="Rua, Av, Trav..."/> </p>
     <p> <label for="cNum"> Número: </label> <input type="number" name="tNum" id="cNum" min="0" max="99999"/> </p>
     <p> <label for="cEst"> Estado: </label> <select id="tEst" id="cEst"> 
-        <option value="SP">Sao paulo </option>
-        <option value="PE" selected>Pernambuco</option>
-        <option value="RJ">Rio de Janeiro</option>
+<option value="">Selecione um estado</option>
+     <option value="AC">Acre</option>
+     <option value="AL">Alagoas</option>
+     <option value="AP">Amapá</option>
+     <option value="AM">Amazonas</option>
+     <option value="BA">Bahia</option>
+     <option value="CE">Ceará</option>
+     <option value="DF">Distrito Federal</option>
+     <option value="ES">Espírito Santo</option>
+     <option value="GO">Goiás</option>
+     <option value="MA">Maranhão</option>
+     <option value="MT">Mato Grosso</option>
+     <option value="MS">Mato Grosso do Sul</option>
+     <option value="MG">Minas Gerais</option>
+     <option value="PA">Pará</option>
+     <option value="PB">Paraíba</option>
+     <option value="PR">Paraná</option>
+     <option value="PE">Pernambuco</option>
+     <option value="PI">Piauí</option>
+     <option value="RJ">Rio de Janeiro</option>
+     <option value="RN">Rio Grande do Norte</option>
+     <option value="RS">Rio Grande do Sul</option>
+     <option value="RO">Rondônia</option>
+     <option value="RR">Roraima</option>
+     <option value="SC">Santa Catarina</option>
+     <option value="SP">São Paulo</option>
+     <option value="SE">Sergipe</option>
+     <option value="TO">Tocantins</option>
     </select> </p>
     <p><label for="cCid"> Cidade: <input type="text" name="tCid" id="cCid" size="25" maxlength="30" placeholder="Sua Cidade" list="cidades" > </label> </p>
     <datalist id="cidades">
