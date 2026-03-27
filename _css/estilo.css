@@ -242,3 +242,32 @@ footer#rodape {
 footer#rodape p {
   text-align: center;
 }
+@media (max-width: 768px) {
+  header#cabecalho {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav#menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav#menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  section#corpo {
+    width: 100%;
+  }
+
+  article#noticia-principal {
+    width: 100%;
+  }
+
+  p {
+    text-indent: 20px;
+  }
+}
