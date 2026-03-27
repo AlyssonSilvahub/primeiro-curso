@@ -20,6 +20,10 @@ div#interface {
   padding: 15px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 a {
   color: #606060;
   text-decoration: none;
@@ -33,9 +37,8 @@ p {
   text-indent: 50px;
 }
 header#cabecalho img#icone {
-  position: absolute;
-  left: 1020px;
-  top: 90px;
+  position: static;
+  max-width: 80px;
 }
 header#cabecalho h1 {
   font-size: 30px;
@@ -53,6 +56,10 @@ header#cabecalho h2 {
 }
 
 header#cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   border-bottom: 3px #606060 solid;
   height: 155px;
   background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 105px;
@@ -95,6 +102,9 @@ nav#menu {
 }
 
 nav#menu ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
   list-style: none;
   text-transform: uppercase;
   position: absolute;
@@ -103,6 +113,7 @@ nav#menu ul {
 }
 
 nav#menu li {
+  list-style: none;
   display: inline-block;
   background-color: #dddddd;
   padding: 10px;
