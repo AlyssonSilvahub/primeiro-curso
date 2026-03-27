@@ -52,7 +52,6 @@ header#cabecalho h2 {
   color: #888888;
   font-size: 20px;
   padding: 0px;
-  margin-top: 0;
 }
 
 header#cabecalho {
@@ -61,7 +60,6 @@ header#cabecalho {
   justify-content: space-between;
   flex-wrap: wrap;
   border-bottom: 3px #606060 solid;
-  height: 155px;
   background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 105px;
 }
 
@@ -72,7 +70,6 @@ figure.foto-legenda {
   position: relative;
   border: 5px solid white;
   box-shadow: 1px 1px 4px black;
-  left: 0;
 }
 
 figure.foto-legenda img {
@@ -105,11 +102,7 @@ nav#menu ul {
   display: flex;
   gap: 15px;
   padding: 0;
-  list-style: none;
   text-transform: uppercase;
-  position: absolute;
-  top: -20px;
-  left: 400px;
 }
 
 nav#menu li {
